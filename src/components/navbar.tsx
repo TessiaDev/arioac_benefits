@@ -19,9 +19,10 @@ export default function Navbar() {
   ];
 
   return (
+    // <nav className="bg-gradient-to-r from-[#293B85] to-[#B82E69]">
     <nav className="bg-gradient-to-r from-[#293B85] to-[#B82E69]">
       <div className="items-center justify-between max-w-7xl px-2 mx-auto md:flex md:px-8 pb-2 transition-all">
-        <div className="flex items-center justify-between py-2 md:py-5 md:block">
+        <div className="flex items-center justify-between py-2 md:block">
           <a href="#">
             <Image
               className=" max-h-8 sm:max-h-10 md:max-h-12 w-auto"
@@ -77,11 +78,11 @@ export default function Navbar() {
                 <li key={i}>
                   <a
                     href={item.path}
-                    className="text-gray-300 rounded-md px-3 py-2 text-md font-medium relative group"
+                    className="text-gray-300 rounded-md px-3 py-2 text-sm relative group"
                   >
                     {item.title}
                     <span
-                      className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-gray-300 transition-all ${
+                      className={`absolute bottom-0.5 left-0 w-0 h-px font-semibold bg-gray-300 transition-all ${
                         item.path === pathname
                           ? " w-full"
                           : " group-hover:w-full"

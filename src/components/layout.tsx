@@ -4,15 +4,15 @@ import Footer from "./footer";
 import Navbar from "./navbar";
 
 interface IPropLayout {
-  children: ReactElement
+  children: ReactElement;
 }
 
-export default function Layout({children}: IPropLayout) {
+export default function Layout({ children }: IPropLayout) {
   return (
-    <>
-      <Navbar/>
+    <div className="h-screen">
+      <Navbar />
       <main>{children}</main>
-      <Footer/>
-    </>
-  )
+      <Footer />
+    </div>
+  );
 }
